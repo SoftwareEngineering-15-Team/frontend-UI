@@ -1,0 +1,225 @@
+
+body {
+    width:400px;
+    margin:auto;
+    align-items: center;
+    background-color: rgba(106, 142, 35, 0.253);
+}
+
+.healthinfo {
+    width: 400px;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align:right;
+    background-color: whitesmoke;
+    margin-bottom: 3px;
+}
+
+
+table {
+    width:400px;
+    padding: 25px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin:auto;
+    text-align:left;
+    background-color: whitesmoke;
+    margin-bottom: 3px;
+}
+
+tr, td {
+    padding-inline: 5px;
+    padding-block: 5px;
+}
+
+tr:hover {background-color: rgba(186, 189, 186, 0.171);} 
+
+.submitbtn {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgb(67, 85, 202);
+    color: whitesmoke;
+    font-size: 13px;
+    font-weight:bold;
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 300px;
+    transform: translateX(50%);
+}
+
+.submitbtn:hover {
+    background-color: rgb(47, 62, 160);
+  }
+.welcome{
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.welcomebtn {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgb(67, 85, 202);
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight:bold;
+    padding-inline: 15px;
+    padding-block:10px;
+}
+
+.welcomebtn:hover {
+    background-color: rgb(47, 62, 160);
+  }
+
+.main1 {
+    text-align: center;
+    margin-top: 30px; 
+    scroll-margin-left: 15px;
+    scroll-margin-right: 15px;
+    padding-block: 15px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    width: 380px
+}
+
+.predictbtn {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgb(67, 85, 202);
+    color: whitesmoke;
+    font-size: 13px;
+    font-weight:bold;
+    padding-inline: 20px;
+    padding-block: 5px;
+}
+
+.predictbtn:hover {
+    background-color: rgb(47, 62, 160);
+  }
+
+.main2 {
+    text-align: center;
+    margin-top: 15px; 
+    scroll-margin-left: 15px;
+    scroll-margin-right: 15px;
+    margin-bottom: 3px;
+    padding-block: 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    width: 380px;
+}
+
+:-ms-input-placeholder {
+    color:grey;
+    font-size: 20px;
+}
+
+.searchbox {
+    color:#808080;
+    padding-block: 5px;
+    margin-bottom: 10px;
+    width: 170px;
+    font-size: 13px;
+}
+
+.searchbtn {
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: rgb(67, 85, 202);
+    color: whitesmoke;
+    font-size: 13px;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.searchbtn:hover {
+    background-color: rgb(47, 62, 160);
+  }
+
+.main3 {
+    text-align: center;
+    margin-top: 15px; 
+    scroll-margin-left: 15px;
+    scroll-margin-right: 15px;
+    margin-bottom: 3px;
+    width: 380px;
+    padding-block: 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+.mainbtn {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgb(67, 85, 202);
+    color: whitesmoke;
+    font-size: 13px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-left: 5px;
+}
+
+.mainbtn:hover {
+    background-color: rgb(47, 62, 160);
+  }
+
+.viewinfo {
+    text-align: left;
+    margin-top: 30px; 
+    scroll-margin-left: 15px;
+    scroll-margin-right: 15px;
+    margin-bottom: 3px;
+    width: 360px;
+    padding-block: 30px;
+    padding-inline: 20px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+.result {
+    text-align: center;
+    margin-top: 30px; 
+    scroll-margin-left: 15px;
+    scroll-margin-right: 15px;
+    padding-block: 25px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    width: 380px
+}
+
+
+.backtomainbtn {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgb(67, 85, 202);
+    color: whitesmoke;
+    font-size: 13px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-top: 15px;
+    margin-left: 300px;
+    transform: translateX(50%);
+}
+
+.backtomainbtn:hover {
+    background-color: rgb(47, 62, 160);
+  }

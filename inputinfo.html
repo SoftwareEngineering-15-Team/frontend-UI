@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 style="margin-top: 50px; margin-bottom:20px;"><b>회원 건강 정보</b></h2>
+    <form action="submit_form.php" method="post" id="healthForm">
+        <table>
+            <tr>
+                <th>성별을 입력하세요. </th>
+                <td><input type="radio" name="gender" id="male" value="male" />남성</td>
+                <td><input type="radio" name="gender" id="female" value="female" />여성</td>
+            </tr>
+            <tr>
+                <th> 나이를 입력하세요. </th>
+                <td colspan="2"><input type="number" name="age" min="0" style="width: 60px;" /></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th> 현재 고혈압을 앓고 있습니까?</th>
+                <td><input type="radio" name="hypertension" id="hypertension_yes" value="yes" />예</td>
+                <td><input type="radio" name="hypertension" id="hypertension_no" value="no" />아니오</td>
+            </tr>
+            <tr>
+                <th>현재 심장병을 앓고 있습니까?</th>
+                <td><input type="radio" name="heart_disease" id="heart_disease_yes" value="yes" />예</td>
+                <td><input type="radio" name="heart_disease" id="heart_disease_no" value="no" />아니오</td>
+            </tr>
+            <tr>
+                <th>뇌졸중 이력이 있습니까?</th>
+                <td><input type="radio" name="stroke" id="stroke_yes" value="yes" />예</td>
+                <td><input type="radio" name="stroke" id="stroke_no" value="no" />아니오</td>
+            </tr>
+            <tr>
+                <th >현재 흡연자입니까?</th>
+                <td colspan="2"><input type="radio" name="smoking_status" id="smokes" value="smokes" />흡연자이다</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="smoking_status" id="formerly_smoked" value="formerly_smoked" />과거 흡연하였으나 현재는 금연</td>
+                <td colspan="2"><input type="radio" name="smoking_status" id="never_smoked" value="never_smoked" />흡연한 적 없음</td>
+            </tr>
+            <tr>
+                <th> 평균 혈당 농도를 입력하세요. </th>
+                <td colspan="2"><input type="number" name="avg_glucose_level" min="0" style="width: 60px;" /></td>
+            </tr>
+            <tr>
+                <th> BMI를 입력하세요. </th>
+                <td colspan="2"><input type="number" name="BMI" min="0" style="width: 60px;" /></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>결혼한 적이 있습니까?</th>
+                <td><input type="radio" name="ever_married" id="ever_married_yes" value="yes" />예</td>
+                <td><input type="radio" name="ever_married" id="ever_married_no" value="no" />아니오</td>
+            </tr>
+            <tr>
+                <th colspan="3">현재 어떤 직업에 종사하고 있습니까?</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="work_type" id="private" value="private" />사기업
+                    <input type="radio" name="work_type" id="govt_job" value="govt_job" />공공기관
+                    <input type="radio" name="work_type" id="self_employed" value="self_employed" /> 자영업
+                </td>
+                <td><input type="radio" name="work_type" id="children" value="children" />학생</td>
+                <td><input type="radio" name="work_type" id="never_worked" value="never_worked" />무직</td>
+            </tr>
+            <tr>
+                <th>현재 거주지는 어디입니까?</th>
+                <td><input type="radio" name="residence_type" id="urban" value="urban" />도심</td>
+                <td><input type="radio" name="residence_type" id="rural" value="rural" />교외</td>
+            </tr>
+            
+        </table>
+        <div>
+            <input type="submit" value="제출" style="padding: 4.5px; margin-left:350px; margin-bottom: 30px;margin-top:15px;" />
+        </div>
+
+    </form>
+</body>
+</html>

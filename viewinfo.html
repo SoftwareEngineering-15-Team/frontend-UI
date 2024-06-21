@@ -1,0 +1,65 @@
+<?php
+// 데이터베이스 접속 정보
+$servername = "localhost";
+$username = "your_username";
+$password = "your_password";
+$dbname = "your_database";
+
+// 접속 생성
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// 접속 확인
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// 사용자 ID나 식별자를 기준으로 데이터 조회
+// 여기서는 임시로 가장 최근에 입력된 데이터를 가져오도록 설정했습니다.
+$sql = "SELECT * FROM health_info ORDER BY id DESC LIMIT 1";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // 데이터 출력
+    $row = $result->fetch_assoc();
+    $gender = $row['gender'];
+    $age = $row['age'];
+    $hypertension = $row['hypertension'];
+    $heart_disease = $row['heart_disease'];
+    $stroke = $row['stroke'];
+    $smoking_status = $row['smoking_status'];
+    $avg_glucose_level = $row['avg_glucose_level'];
+    $bmi = $row['bmi'];
+    $ever_married = $row['ever_married'];
+    $work_type = $row['work_type'];
+    $residence_type = $row['residence_type'];
+} else {
+    echo "No data found";
+    exit();
+}
+
+$conn->close();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 정보 조회</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='viewinfo'>
+        <div><span class='data-title'>성별:</span> <?php echo $gender == "male" ? "남성" : "여성"; ?></div>
+        <div><span class='data-title'>나이:</span> <?php echo $age; ?></div>
+        <div><span class='data-title'>고혈압 여부:</span> <?php echo $hypertension == "yes" ? "예" : "아니요"; ?></div>
+        <div><span class='data-title'>심장병 여부:</span> <?php echo $heart_disease == "yes" ? "예" : "아니요"; ?></div>
+        <div><span class='data-title'>뇌졸중 이력:</span> <?php echo $stroke == "yes" ? "예" : "아니요"; ?></div>
+        <div><span class='data-title'>흡연 상태:</span> <?php echo $smoking_status; ?></div>
+        <div><span class='data-title'>평균 혈당 농도:</span> <?php echo $avg_glucose_level; ?></div>
+        <div><span class='data-title'>BMI:</span> <?php echo $bmi; ?></div>
+        <div><span class='data-title'>결혼 여부:</span> <?php echo $ever_married == "yes" ? "예" : "아니요"; ?></div>
+        <div><span class='data-title'>직업 종류:</span> <?php echo $work_type; ?></div>
+        <div><span class='data-title'>거주지 유형:</span> <?php echo $residence_type; ?></div>
+    </div>
+</body>
